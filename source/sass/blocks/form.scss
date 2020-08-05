@@ -1,0 +1,64 @@
+/*.form {
+
+}*/
+
+.form__fieldset {
+  @include reset;
+  border: 0 none;
+}
+
+.form__legend {
+  @include font(14px, 1.3, $normal);
+  @include caps;
+  color: $c_theme-main;
+  text-align: center;
+}
+
+.form__label {
+  @include font(14px, 2.1, $normal);
+  color: $c_theme-main;
+
+  &--personal-info {
+    @include caps;
+  }
+}
+
+.form__input {
+  @include font(18px, 1.7, $normal);
+  color: $c_text-two;
+
+  &::placeholder {
+    color: $c_text-two;
+  }
+
+  &[type="text"],
+  &[type="email"],
+  &[type="tel"] {
+    width: 100%;
+  }
+}
+
+.form__textarea {
+  @include font(18px, 1.7, $normal);
+  width: 100%;
+  padding: 15px 20px;
+  resize: vertical;
+  color: $c_text-two;
+
+  &::placeholder {
+    color: $c_text-two;
+  }
+}
+
+.form__footnote {
+  @include caps;
+  text-align: center;
+}
+
+.form__text-accent-color {
+  color: $c_theme-main;
+}
+
+/*.form__btn {
+
+}*/

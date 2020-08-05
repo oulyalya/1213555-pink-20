@@ -1,0 +1,47 @@
+.main-nav {
+  @include flex(row);
+  width: 100%;
+}
+/*&--closed */
+/*&--nojs*/
+
+.main-nav__toggle {
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include flex(column);
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    @include flex(row);
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+  /*background-color: $c_theme-dark;*/
+
+  @include tablet {
+    width: auto;
+  }
+
+  /*  &--active {
+
+  }*/
+}
+
+/*.main-nav__logo-link {
+
+}*/
+
+.main-nav__link {
+  @include font(18px, 1.8, $bold);
+  @include caps;
+  display: block;
+  width: 100%;
+  color: $c_light;
+}

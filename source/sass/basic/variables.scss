@@ -6,9 +6,9 @@ $bold: 700;
 $mobile-width: 320px;
 $tablet-width: 660px;
 $desktop-width: 1200px;
-$mobile-pads: 0;
-$tablet-pads: 0;
-$desktop-pads: 0;
+$mobile-pads: 20px;
+$tablet-pads: 20px;
+$desktop-pads: 120px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -18,6 +18,7 @@ $c_text-two:  #283645; /*dark-blue*/
 $c_text-three: #000000; /*black*/
 $c_theme-main: #d22856; /*pink*/
 $c_theme-dark: #283645; /*dark-blue*/
-$c_theme-additional: #2aab6d;
+$c_theme-additional: #2aab6d; /*green*/
+$c_light: white;
 $c_bg: #f2f2f2; /*lighter-gray*/
 $c_border: #e5e5e5; /*light-gray*/

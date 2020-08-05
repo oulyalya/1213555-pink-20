@@ -8,192 +8,212 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <div class="main-nav__item">
-          <a class="main-nav__logo-link" href="#">
-            <img class="main-nav__logo-pic" src="" alt="" width="" height="">
-          </a>
-        </div>
-        <button class="main-nav__toggle" type="button">Открыть/закрыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="wrapper wrapper--main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="container">
+            <div class="main-nav__item">
+              <a class="main-nav__logo-link" href="#">
+                <img class="logo logo--header" src="img"  width="74" height="23" alt="Перети на главную страницу">
+              </a>
+            </div>
+            <button class="main-nav__toggle" type="button"><span class="viaually-hidden">Открыть/закрыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a class="main-nav__link" href="#">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1>Фотографии пользователей</h1>
-      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-
+      <div class="wrapper">
+        <div class="container">
+          <h1 class="title title--inner-page">Фотографии пользователей</h1>
+          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+      </div>
       <section class="gallery">
         <h2 class="visually-hidden">Галерея фотографий пользоватлей приложения</h2>
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-
-<!-- классы под вопросом, мб панораме по галлери__фото выысоту можно будет задать, мб сделать панораму отдельным блоком, мб панораму как блок вынести ниже фото в цсс и задать параметры искл.чительно для фото на всю ширину -->
-        <figure class="gallery__photo photo photo--panorama">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Фото дня. Опубликовано 2020-08-01 в 12:00, автор - Анна">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Анна</b>
-              <time class="photo__date" datetime="2020-08-01T17:55">(5 минут назад)</time>
-            </p>
-            <p class="photo__text photo__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-              трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="photo__likes photo__likes--full">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 215</span>
+        <div class="container">
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+        <section class="gallery__panorama panorama">
+          <h3 class="visually-hidden">Фото дня</h3>
+          <figure class="panorama__photo photo">
+            <div class="wrapper">
+              <a class="photo__link" href="#">
+                <img class="photo__image" src="#" alt="Фото дня. Опубликовано 2020-08-01 в 12:00, автор - Анна">
+              </a>
             </div>
-          </figcaption>
-        </figure>
+            <figcaption class="photo__info">
+              <div class="container">
+                <p class="photo__author">
+                  <b class="photo__author-name">Анна</b>
+                  <time class="photo__date" datetime="2020-08-01T17:55">(5 минут назад)</time>
+                </p>
+                <p class="photo__text photo__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+                  трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="photo__likes photo__likes--full">
+                  <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                  <span class="photo__like-count">Нравится: 215</span>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </section>
 
+        <div class="container">
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Левон">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Левон</b>
+                <time class="photo__date" datetime="2020-08-01T12:00">(5 часов назад)</time>
+              </p>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 356</span>
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Левон">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Левон</b>
-              <time class="photo__date" datetime="2020-08-01T12:00">(5 часов назад)</time>
-            </p>
-            <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 356</span>
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Антон">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Антон</b>
+                <time class="photo__date" datetime="2020-08-01T06:00">(12 часов назад)</time>
+              </p>
+              <p class="photo__text">Соседи будут рады!</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 666</span>
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Антон">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Антон</b>
-              <time class="photo__date" datetime="2020-08-01T06:00">(12 часов назад)</time>
-            </p>
-            <p class="photo__text">Соседи будут рады!</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 666</span>
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Борис">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Борис</b>
+                <time class="photo__date" datetime="2020-07-31T22:00">(20 часов назад)</time>
+              </p>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 215</span>
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Борис">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Борис</b>
-              <time class="photo__date" datetime="2020-07-31T22:00">(20 часов назад)</time>
-            </p>
-            <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 215</span>
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Сергей">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Сергей</b>
+                <time class="photo__date" datetime="2020-07-31T17:00">(25 часов назад)</time>
+              </p>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 4</span>
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Сергей">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Сергей</b>
-              <time class="photo__date" datetime="2020-07-31T17:00">(25 часов назад)</time>
-            </p>
-            <p class="photo__text">Самая кубанская в мире!</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 4</span>
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Максим">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Максим</b>
+                <time class="photo__date" datetime="2020-07-31T02:00">(40 часов назад)</time>
+              </p>
+              <p class="photo__text">Где снег-то?</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 150</span>
+              </div>
+            </figcaption>
+          </figure>
 
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Максим">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Максим</b>
-              <time class="photo__date" datetime="2020-07-31T02:00">(40 часов назад)</time>
-            </p>
-            <p class="photo__text">Где снег-то?</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 150</span>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure class="gallery__photo photo">
-          <a class="photo__link" href="#">
-            <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Надежда">
-          </a>
-          <figcaption class="photo__info">
-            <p class="photo__author">
-              <b class="photo__author-name">Надежда</b>
-              <time class="photo__date" datetime="2020-07-30T21:00">(45 часов назад)</time>
-            </p>
-            <p class="photo__text">Всем GM и взаимные лайки!</p>
-            <div class="photo__likes">
-              <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
-              <span class="photo__like-count">Нравится: 2560</span>
-            </div>
-          </figcaption>
-        </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <img class="photo__image" src="#" alt="Опубликовано 2020-08-01 в 12:00, автор - Надежда">
+            </a>
+            <figcaption class="photo__info">
+              <p class="photo__author">
+                <b class="photo__author-name">Надежда</b>
+                <time class="photo__date" datetime="2020-07-30T21:00">(45 часов назад)</time>
+              </p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <div class="photo__likes">
+                <button class="photo__like-button" type="button" aria-label="Нравится!"></button>
+                <span class="photo__like-count">Нравится: 2560</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
       </section>
       <section class="photo-editor">
-        <h2 class="visually-hidden">Добавить новую фотографию</h2>
-        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-
+        <div class="container">
+          <h2 class="visually-hidden">Добавить новую фотографию</h2>
+          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo"></div>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link"  href="#">
-          <span class="visually-hidden">HTML Academy</span>
-          <!-- <img src="" alt=""> -->
+      <div class="container">
+        <a class="page-footer__logo logo logo--footer">
+          <img src="img/logo-pink-blue-mobile.svg" width="145" height="40" alt="Перейти на главную страницу">
         </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="#">
+            <span class="visually-hidden">HTML Academy</span>
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

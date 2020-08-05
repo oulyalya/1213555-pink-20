@@ -1,0 +1,17 @@
+.btn {
+  @include font(18px, 1.67, $bold);
+  @include caps;
+  width: 100%;
+  padding: 20px 20px;
+
+  &--main {
+    color: $c_light;
+    background-color: $c_theme-additional;
+    border: 2px solid $c_theme-additional;
+    border-radius: 1px;
+  }
+
+  /*  &--secondary {
+
+  }*/
+}
