@@ -9,15 +9,14 @@
 
 /*@import "../sass/common/title.scss";*/
 @import "../sass/common/btn.scss";
-/*@import "../sass/common/page-header.scss";*/
+@import "../sass/common/page-header.scss";
 @import "../sass/common/page-footer.scss";
-@import "../sass/common/logo.scss";
 @import "../sass/common/main-nav.scss";
 @import "../sass/common/social.scss";
 @import "../sass/common/copyright.scss";
 /*@import "../sass/common/slider.scss"; (?)*/
 
-/*@import "../sass/blocks/promo.scss";*/
+@import "../sass/blocks/promo.scss";
 /*@import "../sass/blocks/features.scss";*/
 /*@import "../sass/blocks/reviews.scss";*/
 /*@import "../sass/blocks/tariff.scss";*/
@@ -29,6 +28,11 @@
 /*@import "../sass/blocks/photo-editor.scss";*/
 /*@import "../sass/blocks/.scss";*/
 
+/**,
+*::before,
+*::after {
+  outline: 1px solid yellow;
+}*/
 /**,
 *::before,
 *::after {
