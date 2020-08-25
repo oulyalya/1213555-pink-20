@@ -1,0 +1,323 @@
+.editor {
+  @include tablet {
+    padding-top: 25px;
+  }
+}
+
+.editor__container {
+  @include tablet {
+    @include flex(row);
+  }
+}
+
+.editor__form {
+  @include section-bg($c_bg);
+  position: relative;
+  padding-top: 20px;
+
+  @include tablet {
+    @include flex(row);
+    min-height: 500px;
+    padding-top: 50px;
+  }
+}
+
+.editor__photo {
+  min-width: 280px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+    margin-left: $tablet-pads;
+  }
+
+  @media (min-width: 750px) {
+    margin-left: 50px;
+  }
+}
+
+.editor__controls {
+  text-align: center;
+  margin: 0 auto;
+
+  @include tablet {
+    @include flex(row);
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    min-width: 275px;
+    width: 45%;
+    margin-left: 330px;
+    margin-right: 0;
+    padding-top: 10px;
+  }
+
+  @media (min-width: 750px) {
+    margin-right: 40px;
+  }
+}
+
+.editor__icon {
+  align-self: center;
+  display: block;
+  margin: auto;
+  fill: rgba($c_theme-dark, 0.3);
+
+  @include tablet {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.editor__label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  outline: 1px solid green;
+
+  &:hover .editor__icon {
+    fill: rgba($c_theme-dark, 0.5);
+  }
+
+
+  @include tablet {
+    margin: 0;
+    outline: 1px solid purple;
+    width: 30px;
+    height: 22px;
+    margin-right: 30px;
+  }
+
+  &--crop {
+    @include tablet {
+      order: 1;
+    }
+  }
+
+  &--fill {
+    @include tablet {
+      order: 3;
+    }
+  }
+
+  &--contrast {
+    @include tablet {
+      order: 5;
+    }
+  }
+}
+
+.editor__control {
+  @include visually-hidden;
+
+  &:checked + .editor__label {
+    & svg {
+      fill: $c_theme-main;
+    }
+  }
+}
+
+.editor__bar {
+  position: relative;
+  display: none;
+  width: 85%;
+  height: 2px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $c_theme-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 2px solid $c_theme-main;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  &:active::after {
+    background-color: $c_theme-main;
+  }
+
+
+  @include tablet {
+    display: block;
+    min-width: 200px;
+    width: calc(100% - 30px - 30px);
+    margin-top: 10px;
+    margin-bottom: 49px;
+    flex-grow: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      /*left: 0;*/
+      right: 0;
+      display: block;
+      min-width: 282px;
+      width: 123%;
+      height: 1px;
+      background-color: black;
+    }
+  }
+
+  &--crop {
+    &::after {
+      left: 84%;
+    }
+
+    @include tablet {
+      order: 2;
+    }
+  }
+
+  &--fill {
+    &::after {
+      left: 70%;
+    }
+
+    @include tablet {
+      order: 4;
+    }
+  }
+
+  &--contrast {
+    &::after {
+      left: 100%;
+    }
+
+    @include tablet {
+      order: 6;
+    }
+  }
+}
+
+/*.editor__bar--crop {
+
+}
+
+.editor__bar--fill {
+
+}
+
+.editor__bar--contrast {
+
+}*/
+
+.editor__control--crop:checked ~ .editor__bar--crop,
+.editor__control--fill:checked ~ .editor__bar--fill,
+.editor__control--contrast:checked ~ .editor__bar--contrast {
+  display: block;
+}
+/*
+.editor__control--fill:checked {
+  & + .editor__bar--crop {
+
+    display: hidden;
+
+  }
+
+  & + .editor__bar--fill {
+display: block;
+
+  }
+
+  & + .editor__bar--contrast {
+    display: hidden;
+
+
+  }
+}
+
+.editor__control--contrast:checked {
+  & + .editor__bar--crop {
+
+    display: hidden;
+
+  }
+
+  & + .editor__bar--fill {
+    display: hidden;
+
+  }
+
+  & + .editor__bar--contrast {
+display: block;
+
+  }
+}
+
+*/
+
+
+/*
+.editor__label--crop
+.editor__label--fill
+.editor__label--contrast*/
+
+.editor__btns {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba($c_theme-dark, 0.1);
+
+  @include tablet {
+    border: 0 none;
+    position: relative;
+    width: 43%;
+    margin-right: $tablet-pads;
+    margin-left: auto;
+    padding: 0;
+    background-color: lightyellow;
+  }
+
+  @media (min-width: 750px) {
+    margin-right: calc(40px + #{$tablet-pads});
+  }
+}
+
+.editor__btn {
+  width: calc(100% - 2 * #{$mobile-pads});
+  min-width: 280px;
+  margin-bottom: 15px;
+  margin-left: $mobile-pads;
+  margin-right: $mobile-pads;
+
+  @include tablet {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

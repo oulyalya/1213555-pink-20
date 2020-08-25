@@ -1,17 +1,26 @@
-/*.title {
+.title {
+  text-align: center;
+  color: white;
 
   &--inner-page {
+    @include font(24px, 1.4, $light);
+    margin-top: 22px;
+    margin-bottom: 85px;
 
+    @include tablet {
+      @include font(50px, 1.32, $light);
+      margin-top: 73px;
+      margin-bottom: 135px;
+    }
+
+    @include desktop {
+      @include font(50px, 1.35, $light);
+      margin-top: 65px;
+      margin-bottom: 90px;
+    }
   }
-}*/
 
-/*
-.title--page {
-
+  &--long {
+    margin-bottom: 50px;
+  }
 }
-
-.title--section {
-
-}
-
-(mixin page-title, section-title)*/
