@@ -1,7 +1,4 @@
 .container {
   @include container;
-
-  &--flex {
-    @include flex(row);
-  }
+  outline: 2px solid orange;
 }

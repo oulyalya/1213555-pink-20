@@ -29,19 +29,18 @@
   min-width: $mobile-width;
   margin: 0 auto;
   padding: 0 $mobile-pads;
-  /*background-color: lightyellow;*/
 
   @include tablet {
-    min-width: $tablet-width;
+    width: auto;
+    max-width: 100%;
     padding: 0 $tablet-pads;
-    /*background-color: pink;*/
   }
 
   @include desktop {
     min-width: $desktop-width;
     width: $desktop-width;
+    max-width: 100%;
     padding: 0 $desktop-pads;
-    /*background-color: lightgreen;*/
   }
 }
 
@@ -83,20 +82,52 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -$mobile-pads;
+    left: 0;
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: $c_theme-dark;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(white, 0.15);
     z-index: -100;
 
-    @include tablet {
-      left: -$tablet-pads;
-    }
-
     @include desktop {
       display: none;
     }
   }
+}
+
+@mixin title-section {
+  @include font(24px, 1.2, $light);
+
+  @include tablet {
+    @include font(40px, 1.4, $light);
+  }
+
+  @include desktop {
+    @include font(50px, 1.16, $light);
+  }
+}
+
+@mixin section-bg($color) {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $color;
+}
+
+@mixin input-style {
+  border: 2px solid $c_border;
+}
+
+@mixin input-hover {
+  border: 2px solid $c_theme-dark;
+}
+
+@mixin input-focus {
+  border: 2px solid $c_theme-main;
+  outline: 0 none;
 }

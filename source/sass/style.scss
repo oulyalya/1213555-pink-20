@@ -4,28 +4,27 @@
 @import "../sass/basic/mixins.scss";
 @import "../sass/basic/global.scss";
 @import "../sass/basic/container.scss";
-@import "../sass/basic/wrapper.scss";
+/*@import "../sass/basic/wrapper.scss";*/
 @import "../sass/basic/visually-hidden.scss";
-
-/*@import "../sass/common/title.scss";*/
+@import "../sass/common/logo-link.scss";
+@import "../sass/common/title.scss";
 @import "../sass/common/btn.scss";
-@import "../sass/common/page-header.scss";
+@import "../sass/common/text-block.scss";
+/*@import "../sass/common/page-header.scss";  УДАЛИТЬ! */
 @import "../sass/common/page-footer.scss";
 @import "../sass/common/main-nav.scss";
 @import "../sass/common/social.scss";
-@import "../sass/common/copyright.scss";
 /*@import "../sass/common/slider.scss"; (?)*/
-
 @import "../sass/blocks/promo.scss";
 /*@import "../sass/blocks/features.scss";*/
 /*@import "../sass/blocks/reviews.scss";*/
 /*@import "../sass/blocks/tariff.scss";*/
 /*@import "../sass/blocks/contacts.scss";*/
 @import "../sass/blocks/form.scss";
-/*@import "../sass/blocks/gallery.scss";*/
-/*@import "../sass/blocks/photo.scss";*/
-/*@import "../sass/blocks/panorama.scss";*/
-/*@import "../sass/blocks/photo-editor.scss";*/
+@import "../sass/blocks/gallery.scss";
+@import "../sass/blocks/photo.scss";
+@import "../sass/blocks/panorama.scss";
+@import "../sass/blocks/editor.scss";
 /*@import "../sass/blocks/.scss";*/
 
 /**,
