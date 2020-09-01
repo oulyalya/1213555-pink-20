@@ -51,6 +51,19 @@
     }
   }
 
+  &--closed::after {
+    top: 0;
+    height: 465px;
+
+    @include tablet {
+      height: 729px;
+    }
+
+    @include tablet {
+      height: 855px;
+    }
+  }
+
   &--closed.main-nav--inner {
     &::after {
       height: 240px;
@@ -79,10 +92,6 @@
         /*height: 100px;*/
       }
     }
-  }
-
-  &--closed::after {
-    top: 0;
   }
 }
 

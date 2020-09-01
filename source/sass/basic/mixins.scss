@@ -131,3 +131,18 @@
   border: 2px solid $c_theme-main;
   outline: 0 none;
 }
+
+@mixin accent-link {
+  color: $c_theme-main;
+
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: black;
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}

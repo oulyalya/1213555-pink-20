@@ -7,6 +7,7 @@
   }
 
   @include desktop {
+    @include flex(row);
     padding-right: 174px;
     padding-left: 174px;
   }
@@ -33,17 +34,22 @@
   }
 
   @include desktop {
-    min-width: 400px;
+    min-width: 300px;
     width: auto;
+    max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
     outline: 1px solid lightgreen;
-    background-color: lightblue;
   }
 
   &--padding {
     padding-top: 25px;
     padding-bottom: 43px;
+
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &--no-border {
@@ -55,6 +61,12 @@
 
     @include tablet {
       padding-top: 0;
+    }
+  }
+
+  &--flex {
+    @include desktop {
+      @include flex(row);
     }
   }
 
@@ -70,14 +82,34 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    @include desktop {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &--half-width {
+    @include desktop {
+
+      margin: 0;
+      background-color: yellow;
+      /*width: 30%;*/
+      width: 100%;
+      max-width: calc(0.5 * #{$desktop-width});
+    }
   }
 }
 
 .form__group {
   @include tablet {
     position: relative;
+    margin-bottom: 54px;
     padding-top: 15px;
-    margin-bottom: 52px;
+  }
+
+  @include desktop {
+    width: 100%;
   }
 
   &--no-padding-top {
@@ -89,6 +121,12 @@
       order: 1;
       margin-bottom: 0;
     }
+
+    /*@include desktop {
+      margin-top: 20px;
+      width: 46%;
+      margin-left: auto;
+    }*/
   }
 
   &--achievements {
@@ -107,6 +145,11 @@
     @include tablet {
       order: 2;
     }
+
+    /* @include desktop {
+      width: 46%;
+      margin-right: auto;
+    }*/
   }
 
   &--comment {
@@ -114,6 +157,14 @@
       order: 5;
     }
   }
+}
+
+.form__group--half-width {
+  /*max-width: 48%;*/
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  max-width: calc(0.5 * #{$desktop-width} - 50%);
 }
 
 .form__line-container {
@@ -132,6 +183,28 @@
 
       &:first-of-type {
         margin-top: 45px;
+
+        @include desktop {
+          margin-top: auto;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    margin-top: 0;
+
+    &--half-width {
+      width: 50%;
+      margin-top: 40px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: -20px;
+      /*align-items: flex-start;*/
+
+      &:nth-of-type(4n-2) {
+        margin-right: 10px;
+        margin-left: -100px;
       }
     }
   }
@@ -196,6 +269,10 @@
       padding-left: 30px;
       text-align: left;
     }
+
+    /*    @include desktop {
+      margin: 0;
+    }*/
   }
 
   &--email {
@@ -208,10 +285,14 @@
       padding-left: 30px;
       text-align: left;
     }
+
+    /*    @include desktop {
+      margin: 0;
+    }*/
   }
 }
 
-@mixin input-style {
+/*@mixin input-style {
   border: 2px solid $c_border;
 }
 
@@ -222,7 +303,7 @@
 @mixin input-focus {
   border: 2px solid $c_theme-main;
   outline: 0 none;
-}
+}*/
 
 .form__input {
   @include font(18px, 1.7, $normal);
@@ -252,7 +333,13 @@
     @include tablet {
       order: 1;
       width: 81%;
+      height: 62px;
+      padding-right: 77px;
       flex-grow: 1;
+    }
+
+    @include desktop {
+      flex-grow: 0;
     }
   }
 
@@ -361,6 +448,42 @@
   }
 }
 
+.form__label--checkbox-1 {
+  @include desktop {
+    order: 1;
+  }
+}
+
+.form__label--checkbox-2 {
+  @include desktop {
+    order: 4;
+  }
+}
+
+.form__label--checkbox-3 {
+  @include desktop {
+    order: 2;
+  }
+}
+
+.form__label--checkbox-4 {
+  @include desktop {
+    order: 5;
+  }
+}
+
+.form__label--checkbox-5 {
+  @include desktop {
+    order: 3;
+  }
+}
+
+.form__label--checkbox-6 {
+  @include desktop {
+    order: 6;
+  }
+}
+
 .form__label--radio {
   margin-top: 38px;
   padding-left: 70px;
@@ -371,6 +494,10 @@
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 60px;
+  }
+
+  @include desktop {
+    margin-left: 70px;
   }
 
   &:first-of-type {

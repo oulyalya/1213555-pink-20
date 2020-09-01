@@ -1,21 +1,46 @@
-/*.tariff (+ slider)
+.tariff {
+  padding-top: 124px;
+  background-color: $c_bg;
+  overflow: hidden;
+  z-index: 3;
 
-.tariff__title
-
-.tariff__price
-
-.tariff__features
-
-.tariff__feature
-
-.tariff__feature-availability  {
-
-  &--availlable  {
-
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 65px;
   }
 
-  &--unavailable {
-
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: $c_border;
   }
 }
-*/
+
+.tariff__container {
+  padding: 0;
+
+  @include tablet {
+    padding: 0 $tablet-pads;
+  }
+
+  @include desktop {
+    padding: 0 $desktop-pads;
+  }
+}
+
+.tariff__table {
+  top: 0;
+  width: 840px;
+  margin-left: calc(-840px / 4 + #{$mobile-pads});
+
+  @include tablet {
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 940px;
+    max-width: 940px;
+  }
+}

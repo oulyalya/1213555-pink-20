@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--nojs main-nav--inner">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__item main-nav__item--top">
           <a class="main-nav__logo-link logo-link logo-link--header" aria-label="Логотипp Pink">
             <svg class="logo-link__pic logo-link__pic--header" width="146" height="41" viewBox="0 0 146 41">
@@ -57,77 +57,249 @@
       <section class="promo">
         <div class="container">
           <h2 class="visually-hidden">Скачайте наше приложение</h2>
-          <p class="promo__title">Взгляните на жизнь иначе!</p>
-          <a class="promo__btn btn btn--rounded btn--ghost" href="#">Скачать приложение</a>
-          <div class="promo__icon-links">
-            <a class="promo__icon-link" href="#">Скачать в iTunes</a>
-            <a class="promo__icon-link" href="#">Скачать в Google Play</a>
-            <a class="promo__icon-link" href="#">Скачать в Магазине Windows</a>
+          <p class="promo__title">Взгляните на&nbsp;жизнь<br>иначе!</p>
+          <div class="promo__download">
+            <a class="promo__btn btn btn--rounded btn--ghost" href="#">Скачать приложение</a>
+            <div class="promo__icon-links">
+              <!-- href="https://www.apple.com/ru/itunes/download/"  -->
+              <!-- href="https://play.google.com/store?hl=ru" -->
+              <!-- href="https://www.microsoft.com/ru-ru/store/apps/windows" -->
+              <a class="promo__icon-link promo__icon-link--ios" href="#"><span class="visually-hidden">Скачать в iTunes</span></a>
+              <a class="promo__icon-link promo__icon-link--android" href="#"><span class="visually-hidden">Скачать в Google Play</span></a>
+              <a class="promo__icon-link promo__icon-link--windows" href="#"><span class="visually-hidden">Скачать в Магазине Windows</span></a>
+            </div>
+            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows&nbsp;Phone, OS X, Windows&nbsp;8</p>
           </div>
-          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+
+      <section class="intro">
+        <div class="container">
+          <p class="intro__text">Устали от серости мегаполиса?</p>
+          <p class="intro__text">Нам есть, что вам<br> предложить!</p>
         </div>
       </section>
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">О приложении PINK</h2>
-          <p class="features__intro">Устали от серости мегаполиса?</p>
-          <p class="features__intro">Нам есть, что вам предложить!</p>
+
+
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__item-title">Поднимает настроение</h3>
-              <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p class="features__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                <picture>
+    <!--               <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x"> -->
+
+                  <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
+                  <img class="features__img features__img--no-display" src="img/iphone-screen-mobile@1x.png" alt="Изображение до обработки">
+                </picture>
+              </p>
             </li>
+
             <li class="features__item">
               <h3 class="features__item-title">Меняет мир вокруг</h3>
-              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="features__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
+                <picture>
+    <!--               <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x"> -->
+
+                  <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
+                  <img class="features__img features__img--no-display" src="img/iphone-screen-mobile@1x.png" alt="Изображение до обработки">
+                </picture>
+              </p>
             </li>
+
             <li class="features__item">
-              <h3 class="features__item-title">Заводит новых друзей</h3>
-              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <h3 class="features__item-title">Заводит новых&nbsp;друзей</h3>
+              <p class="features__text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и заводите новых
+                <picture>
+    <!--               <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x"> -->
+
+                  <source media="(min-width: 960px)"
+                    srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                  <img class="features__img" src="img/iphone-screen-mobile@1x.png" alt="Изображение до обработки"
+                    srcset="img/iphone-screen-mobile@2x.png 2x">
+                </picture>
+              </p>
             </li>
           </ul>
-          <!-- <img src="" alt=""> ????????????????????????????????????? -->
         </div>
       </section>
 
       <section class="effect">
-        <div class="container">
-24 hours</div>
+        <div class="container effect__container">
+          <p class="effect__title">Эффект на&nbsp;24&nbsp;часа!</p>
+          <p class="effect__text">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </section>
 
       <section class="reviews">
-        <div class="container">
+        <div class="container reviews__container">
           <h2 class="visually-hidden">Отзывы о приложении</h2>
-          <ul class="reviews__list">
-            <li class="reviews__list-item">
-              <blockquote class="reviews__item">
+          <section class="slider reviews__slider">
+            <div class="slider__controls-wrapper reviews__controls-wrapper">
+              <input class="slider__control-input visually-hidden" type="radio" name="review-slide" id="review-slide-1" checked>
+              <label class="slider__control-label slider__control-label--active" for="review-slide-1"><span class="visually-hidden">Слайд 1</span></label>
+              <input class="slider__control-input visually-hidden" type="radio" name="review-slide" id="review-slide-2">
+              <label class="slider__control-label" for="review-slide-2"><span class="visually-hidden">Слайд 2</span></label>
+              <input class="slider__control-input visually-hidden" type="radio" name="review-slide" id="review-slide-3">
+              <label class="slider__control-label" for="review-slide-3"><span class="visually-hidden">Слайд 3</span></label>
+
+              <button class="slider__btn slider__btn--left" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+              <button class="slider__btn slider__btn--right" type="button"><span class="visually-hidden">Следующий отзыв</span></button>
+            </div>
+
+            <div class="slider__slides-wrapper reviews__items-wrapper">
+              <blockquote class="slider__slide slider__slide--active reviews__item">
                 <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
                 <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-            </li>
-          </ul>
-          <div class="reviews__slider-controls">
-            <button type="slider__button">Следующий отзыв</button>
-            <button type="slider__button">Следующий отзыв</button>
-            <button type="slider__button">Следующий отзыв</button>
-          </div>
+
+              <blockquote class="slider__slide reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+
+              <blockquote class="slider__slide reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <p class="reviews__author-info">25 лет, водитель трамвая</p>
+                <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </blockquote>
+            </div>
+          </section>
         </div>
       </section>
-      <section class="tariff">
-        <div class="container">
-        <h2 class="visually-hidden">Тарифы и условия</h2>
-        <p class="tariff__title">СТАНДАРТ</p>
-        <p class="tariff__price">3,99 USD</p>
-        <dl class="tariff__features">
-          <dt class="tariff__feature"></dt>
-          <dd class="tariff__feature-availability tariff__feature-availability--available"><span class="visually-hidden">Доступно</span></dd>
-          <dt class="tariff__feature"></dt>
-          <dd class="tariff__feature-availability tariff__feature-availability--availlable"><span class="visually-hidden">Доступно</span></dd>
-          <dt class="tariff__feature"></dt>
-          <dd class="tariff__feature-availability tariff__feature-availability--unavailable"><span class="visually-hidden">Недступно</span></dd>
-        </dl>
-          <div class="slider__controls">
 
+      <section class="tariff">
+        <h2 class="visually-hidden">Тарифы и условия</h2>
+        <div class="table-slider">
+          <div class="table-slider__controls-container">
+            <input class="table-slider__btn table-slider__btn--1 visually-hidden" type="radio" name="table-slider-control" id="table-slider-control-slide-1">
+            <label class="table-slider__label" for="table-slider-control-slide-1"><span class="visually-hidden">Тариф База</span></label>
+            <input class="table-slider__btn visually-hidden" type="radio" name="table-slider-control" id="table-slider-control-slide-2" checked>
+            <label class="table-slider__label" for="table-slider-control-slide-2"><span class="visually-hidden">Тариф Стандарт</span></label>
+            <input class="table-slider__btn visually-hidden" type="radio" name="table-slider-control" id="table-slider-control-slide-3">
+            <label class="table-slider__label" for="table-slider-control-slide-3"><span class="visually-hidden">Тариф Анлим</span></label>
+          </div>
+          <div class="table-slider__table-container">
+            <div class="container tariff__container">
+              <table class="tariff__table table table-slider__table">
+                <tr class="table__row">
+                  <th class="table__header table__header--hidden">
+                  </th>
+                  <th class="table__header table-slider__display-cell">
+                    <b class="table__title">База</b>
+                    <p class="table__price">1,99 USD</p>
+                  </th>
+                  <th class="table__header table-slider__display-cell">
+                    <b class="table__title">Стандарт</b>
+                    <p class="table__price">3,99 USD</p>
+                    <p class="table__diagonal-label">Хит</p>
+                  </th>
+                  <th class="table__header table-slider__display-cell">
+                    <b class="table__title">Анлим</b>
+                    <p class="table__price">9,99 USD</p>
+                  </th>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__cell table__cell--hidden">
+                    <p class="table__feature-title">Розовый фильтр</p>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                        <p class="table__feature-title-in-cell">Розовый фильтр</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Розовый фильтр</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Розовый фильтр</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table__row">
+                  <td class="table__cell table__cell--hidden">
+                    <p class="table__feature-title">Смайлики</p>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Смайлики</p>
+                      <p class="table__feature table__feature--unavailable"><span class="visually-hidden">Недоступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Смайлики</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Смайлики</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="table__row table-slider__row">
+                  <td class="table__cell table__cell--hidden">
+                    <p class="table__feature-title">Комментарии</p>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Комментарии</p>
+                      <p class="table__feature table__feature--unavailable"><span class="visually-hidden">Недоступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Комментарии</p>
+                      <p class="table__feature table__feature--unavailable"><span class="visually-hidden">Недоступно</span></p>
+                    </div>
+                  </td>
+                  <td class="table__cell table-slider__display-cell">
+                    <div class="table__cell-content">
+                      <p class="table__feature-title-in-cell">Комментарии</p>
+                      <p class="table__feature table__feature--available"><span class="visually-hidden">Доступно</span></p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </section>
@@ -135,17 +307,39 @@
         <div class="container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
-          <dl class="contacts__list">
-            <dt class="contacts__item">Звоните:</dt>
-            <dd class="contacts__info">+7 (812) 555-66-66</dd>
-            <dt class="contacts__item">Пишите:</dt>
-            <dd class="contacts__info">mail@htmlacademy.ru</dd>
-            <dt class="contacts__item">Приезжайте в гости:</dt>
-            <dd class="contacts__info">ул. Большая Конюшенная, 19/8</dd>
-          </dl>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--tel">
+              <p class="contacts__item-title">Звоните:</p>
+              <a class="contacts__item-info contacts__item-info--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+
+            <li class="contacts__item contacts__item--email">
+              <p class="contacts__item-title">Пишите:</p>
+              <a class="contacts__item-info contacts__item-info--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+
+            <li class="contacts__item contacts__item--address contacts__item--margin-top">
+              <p class="contacts__item-title">Приезжайте в гости:</p>
+              <p class="contacts__item-info contacts__item-info--text">ул. Большая<br> Конюшенная, 19/8</p>
+            </li>
+          </ul>
         </div>
         <div class="contacts__map">
+          <picture>
+<!--             <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)"
+              srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">-->
 
+            <source media="(min-width: 960px)"
+              srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="contacts__map-img" src="img/bg-map-mobile@1x.jpg" alt="Наш офис на карте"
+              srcset="img/bg-map-mobile@2x.jpg 2x">
+          </picture>
         </div>
       </section>
     </main>
@@ -196,6 +390,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
