@@ -2,6 +2,7 @@
   @include reset;
   position: relative;
   margin-bottom: 20px;
+  background-color: white;
 }
 
 .panorama__label {
@@ -53,7 +54,7 @@
   }
 
   @include desktop {
-    height: 400px;
+    height: 505px;
   }
 }
 
@@ -94,10 +95,11 @@
   @include tablet {
     @include flex(row);
     align-items: center;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: pink;
-    letter-spacing: normal;
   }
 }
 
@@ -126,6 +128,10 @@
 
   @include tablet {
     order: 3;
+  }
+
+  @include desktop {
+    letter-spacing: 0.1px;
   }
 }
 

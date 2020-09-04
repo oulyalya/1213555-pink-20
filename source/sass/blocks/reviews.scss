@@ -29,8 +29,14 @@
   height: 95px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
   z-index: -1;
   transform: translateY(-50px);
+
+  @include tablet {
+    transform: translateY(-30px);
+  }
 
   @include desktop {
     transform: translateY(0);
