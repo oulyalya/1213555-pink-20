@@ -83,14 +83,6 @@
     &::after {
       height: 235px;
       transform: translateY(-67px);
-
-      @include tablet {
-        /*height: 100px;*/
-      }
-
-      @include desktop {
-        /*height: 100px;*/
-      }
     }
   }
 }

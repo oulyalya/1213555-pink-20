@@ -9,28 +9,33 @@
     background-color: white;
 
     @include tablet {
-      margin-top: 60px;
+      margin-top: -8px;
       padding-top: 75px;
-      padding-bottom: 40px;
+      padding-bottom: 75px;
       padding-right: 30px;
       padding-left: 30px;
     }
 
     @include desktop {
       margin-top: 87px;
-      padding-bottom: 45px;
-      padding-top: 90px;
+      padding-bottom: 90px;
+      padding-top: 73px;
+    }
 
-      .text-block__text {
+    .text-block__text {
+      display: block;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      @include tablet {
+        display: inline;
+      }
+
+      @include desktop {
         display: block;
-        max-width: 580px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-
-        @include tablet {
-          display: inline;
-        }
+        max-width: 600px;
       }
     }
   }
