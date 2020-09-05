@@ -1,8 +1,9 @@
 .tariff {
-  padding-top: 124px;
+  position: relative;
+  padding-top: 104px;
   background-color: $c_bg;
   overflow: hidden;
-  z-index: 3;
+  z-index: -3;
 
   @include tablet {
     padding-top: 100px;

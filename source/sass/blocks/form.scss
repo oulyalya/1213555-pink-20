@@ -8,16 +8,32 @@
 
   @include desktop {
     @include flex(row);
-    padding-right: 174px;
-    padding-left: 174px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-right: 130px;
+    padding-left: 130px;
+    text-align: center;
   }
 }
 
-.form__temp-hidden-text {
-  visibility: hidden;
+.form__mobile-no-display {
+  display: none;
 
   @include tablet {
-    visibility: visible;
+    display: block;
+  }
+
+  @include desktop {
+    display: inline;
+  }
+}
+
+.form__desktop-display-only {
+  display: none;
+
+  @include desktop {
+    display: inline;
   }
 }
 
@@ -35,11 +51,11 @@
 
   @include desktop {
     min-width: 300px;
-    width: auto;
+    width: 940px;
     max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
-    outline: 1px solid lightgreen;
+    padding: 0;
   }
 
   &--padding {
@@ -70,6 +86,17 @@
     }
   }
 
+  &--checkbox-grid {
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 0.95fr 0.92fr;
+      grid-row-gap: 45px;
+      padding-top: 50px;
+      padding-left: 40px;
+      padding-right: 0;
+    }
+  }
+
   &--bottom {
     @include tablet {
       @include flex(row);
@@ -84,6 +111,8 @@
     }
 
     @include desktop {
+      width: 940px;
+      margin-bottom: -4px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -91,12 +120,8 @@
 
   &--half-width {
     @include desktop {
-
-      margin: 0;
-      background-color: yellow;
-      /*width: 30%;*/
       width: 100%;
-      max-width: calc(0.5 * #{$desktop-width});
+      margin: 0;
     }
   }
 }
@@ -112,8 +137,25 @@
     width: 100%;
   }
 
+  &--bg {
+    background-color: $c_bg;
+
+    @include tablet {
+      background-color: transparent;
+    }
+  }
+
   &--no-padding-top {
     padding-top: 0;
+  }
+
+  &--half-width {
+    @include desktop {
+      width: 45%;
+      min-width: 300px;
+      max-width: 460px;
+      padding: 0;
+    }
   }
 
   &--name {
@@ -122,11 +164,11 @@
       margin-bottom: 0;
     }
 
-    /*@include desktop {
-      margin-top: 20px;
-      width: 46%;
+    @include desktop {
+      width: 433px;
       margin-left: auto;
-    }*/
+      margin-right: 76px;
+    }
   }
 
   &--achievements {
@@ -146,10 +188,11 @@
       order: 2;
     }
 
-    /* @include desktop {
-      width: 46%;
+    @include desktop {
+      width: 431px;
+      margin-left: 0;
       margin-right: auto;
-    }*/
+    }
   }
 
   &--comment {
@@ -157,14 +200,6 @@
       order: 5;
     }
   }
-}
-
-.form__group--half-width {
-  /*max-width: 48%;*/
-  margin: 0;
-  padding: 0;
-  background-color: pink;
-  max-width: calc(0.5 * #{$desktop-width} - 50%);
 }
 
 .form__line-container {
@@ -200,7 +235,6 @@
       margin-bottom: 13px;
       margin-left: 10px;
       margin-right: -20px;
-      /*align-items: flex-start;*/
 
       &:nth-of-type(4n-2) {
         margin-right: 10px;
@@ -260,7 +294,7 @@
   }
 
   &--tel {
-    margin-top: 30px;
+    margin-top: 18px;
 
     @include tablet {
       order: 2;
@@ -269,10 +303,6 @@
       padding-left: 30px;
       text-align: left;
     }
-
-    /*    @include desktop {
-      margin: 0;
-    }*/
   }
 
   &--email {
@@ -285,25 +315,8 @@
       padding-left: 30px;
       text-align: left;
     }
-
-    /*    @include desktop {
-      margin: 0;
-    }*/
   }
 }
-
-/*@mixin input-style {
-  border: 2px solid $c_border;
-}
-
-@mixin input-hover {
-  border: 2px solid $c_theme-dark;
-}
-
-@mixin input-focus {
-  border: 2px solid $c_theme-main;
-  outline: 0 none;
-}*/
 
 .form__input {
   @include font(18px, 1.7, $normal);
@@ -429,16 +442,28 @@
     padding-left: 60px;
   }
 
+  @include desktop {
+    margin: 0 20px;
+  }
+
   &:first-of-type {
     margin-top: 40px;
 
     @include tablet {
       margin-top: 50px;
     }
+
+    @include desktop {
+      margin-top: 0;
+    }
   }
 
   &:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
   }
 
   &::before {
@@ -582,13 +607,18 @@
 .form__input--radio:checked + .form__label--radio::after {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 11px;
+  left: 11px;
   display: block;
   width: 15px;
   height: 15px;
   background-color: $c_theme-main;
   border-radius: 50%;
+
+  @include tablet {
+    top: 13px;
+    left: 13px;
+  }
 }
 
 .form__input--radio:disabled {
@@ -641,6 +671,12 @@
     margin-bottom: 45px;
   }
 
+  @include desktop {
+    width: 820px;
+    min-height: 125px;
+    margin-bottom: 35px;
+  }
+
   &:hover {
     @include input-hover;
   }
@@ -658,7 +694,6 @@
 .form__footnote {
   @include caps;
   margin-top: 35px;
-  /*margin-bottom: -10px;*/
   text-align: center;
 
   @include tablet {
@@ -680,4 +715,8 @@
     min-width: 300px;
     margin-right: auto;
   }
+}
+
+.container {
+  outline: 0 none;
 }
