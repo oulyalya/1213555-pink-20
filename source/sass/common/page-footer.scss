@@ -2,19 +2,17 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @include tablet {
-    background-color: pink;
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      align-items: center;
-    }
-  }
-
   @include desktop {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+}
+
+.page-footer__container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
   }
 }
 
@@ -29,7 +27,7 @@
   }
 
   @include desktop {
-    margin-top: -15px;
+    margin-top: -13px;
     margin-bottom: 0;
   }
 }
@@ -55,6 +53,11 @@
     margin-top: 10px;
     font-size: 14px;
     text-align: right;
+  }
+
+  @include desktop {
+    margin-top: 0;
+    font-size: 18px;
   }
 
   &:hover {

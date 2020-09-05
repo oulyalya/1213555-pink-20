@@ -10,16 +10,16 @@
 
     @include tablet {
       margin-top: -8px;
-      padding-top: 75px;
-      padding-bottom: 75px;
+      padding-top: 90px;
+      padding-bottom: 70px;
       padding-right: 30px;
       padding-left: 30px;
     }
 
     @include desktop {
       margin-top: 87px;
-      padding-bottom: 90px;
-      padding-top: 73px;
+      padding-top: 90px;
+      padding-bottom: 60px;
     }
 
     .text-block__text {
@@ -34,7 +34,6 @@
       }
 
       @include desktop {
-        display: block;
         max-width: 600px;
       }
     }
@@ -50,10 +49,10 @@
   }
 }
 
-.text-block__text--temp-hidden {
-  display: none;
+.text-block__mobile-no-display {
+  visibility: hidden;
 
   @include tablet {
-    display: inline;
+    visibility: visible;
   }
 }

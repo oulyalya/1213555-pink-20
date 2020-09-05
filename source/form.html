@@ -58,13 +58,13 @@
       </div>
       <div class="text-block text-block--white-bg">
         <div class="container">
-          <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную&nbsp;карту! <span class="text-block__text text-block__text--temp-hidden">Пожалуйста, заполните форму ниже:</span></p>
+          <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу&nbsp;бонусную&nbsp;карту! <span class="text-block__text text-block__mobile-no-display">Пожалуйста, заполните форму ниже:</span></p>
         </p>
         </div>
       </div>
       <form class="form" id="participant-info" action="#" method="post">
         <h2 class="visually-hidden">Форма участника конкурса</h2>
-        <!-- <div class="form__group form__group--no-padding-top form__group--name form__group--half-width">
+        <div class="form__group form__group--no-padding-top form__group--name form__group--half-width">
           <div class="container form__container form__container--no-border form__container--padding form__container--no-padding-top form__container--half-width">
             <h3 class="visually-hidden">Укажите свои персональные данные</h3>
             <div class="form__line-container">
@@ -80,9 +80,9 @@
               <input class="form__input form__input--text" type="text" id="participant-patronym" name="participant-patronym" placeholder="Ну и отчество тоже">
             </div>
           </div>
-        </div> -->
-        <div class="form__group form__group--achievements">
-          <div class="container form__container form__container--padding form__container--flex">
+        </div>
+        <div class="form__group form__group--bg form__group--achievements">
+          <div class="container form__container form__container--padding form__container--no-padding-bottom form__container--flex form__container--checkbox-grid">
             <h3 class="form__group-title">Ваши безбашенные достижения в путешествии</h3>
             <input class="form__input form__input--checkbox" type="checkbox" id="crazy-achievement-photo-with-shark" name="crazy-achievement" value="photo-with-shark" checked>
             <label class="form__label form__label--checkbox form__label--checkbox-1" for="crazy-achievement-photo-with-shark">Сделал селфи с акулой</label>
@@ -100,7 +100,7 @@
         </div>
         <div class="form__group form__group--contacts">
           <div class="container form__container form__container--flex form__container--padding form__container--no-padding-top">
-            <h3 class="form__group-title"><span class="form__temp-hidden-text">Контактные информация</span></h3>
+            <h3 class="form__group-title"><span class="form__mobile-no-display">Контактная информация</span></h3>
             <div class="form__line-container form__line-container--column  form__line-container--half-width">
               <label class="form__label form__label--margin form__label--personal-info form__label--tel" for="participant-tel">Номер телефона</label>
               <input class="form__input form__input--tel" type="tel" id="participant-tel" name="participant-tel" placeholder="Номер, пожалуйста">
@@ -113,7 +113,7 @@
           </div>
           </div>
         </div>
-<!--         <div class="form__group form__group--os form__group--half-width">
+        <div class="form__group form__group--bg form__group--os form__group--half-width">
           <div class="container form__container form__container--padding form__container--half-width">
             <h3 class="form__group-title">С каким приложением путешествовали?</h3>
             <input class="form__input form__input--radio" type="radio" id="participant-os-ios" name="operating-system" value="ios" checked>
@@ -123,7 +123,7 @@
             <input class="form__input form__input--radio" type="radio" id="participant-os-windows" name="operating-system" value="windows-phone">
             <label class="form__label form__label--radio" for="participant-os-windows">Windows Phone</label>
           </div>
-        </div> -->
+        </div>
         <div class="form__group form__group--comment">
           <div class="container form__container form__container--padding">
             <h3 class="form__group-title">Опишите свои эмоции</h3>
@@ -133,12 +133,12 @@
         </div>
         <div class="container form__container form__container--bottom form__container--no-border">
           <button class="form__btn btn btn--main" type="submit">Отправить форму</button>
-          <p class="form__footnote"><span class="form__text-accent-color">*</span> — обязательные поля</p>
+          <p class="form__footnote"><span class="form__text-accent-color">*</span> — обязательные<span class="form__desktop-display-only">для заполнения</span> поля</p>
         </div>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <a class="page-footer__logo-link logo-link logo-link--footer" href="index.html" aria-label="Перейти на главную страницу">
           <svg class="logo-link__pic logo-link__pic--footer" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
             <g class="logo-link__pink">
