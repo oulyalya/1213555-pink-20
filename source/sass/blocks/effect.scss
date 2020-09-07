@@ -15,12 +15,12 @@
 .effect__container {
   @include tablet {
     position: relative;
-    padding-top: 72px;
+    padding-top: 79px;
     padding-bottom: 50px;
   }
 
   @include desktop {
-    padding-top: 110px;
+    padding-top: 115px;
   }
 }
 
@@ -28,7 +28,7 @@
   @include tablet {
     content: "";
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 20px;
     width: 240px;
     height: 276px;
@@ -60,7 +60,7 @@
     @include font(96px, 1.7, $bold);
     content: "24";
     position: absolute;
-    top: 115px;
+    top: 120px;
     left: 38px;
     width: 202px;
     height: 202px;

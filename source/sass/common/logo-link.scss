@@ -1,4 +1,5 @@
 .logo-link__pic {
+  @include transition-effect;
   width: 146px;
   height: 41px;
   font-size: 14px;
@@ -87,6 +88,7 @@
     .logo-link__pink,
     .logo-link__glasses-sparkle,
     .logo-link__sparkles {
+      @include transition-effect;
       fill: $c_theme-main;
     }
   }

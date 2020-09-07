@@ -18,34 +18,35 @@
 
     @include desktop {
       margin-top: 87px;
-      padding-top: 90px;
-      padding-bottom: 60px;
-    }
-
-    .text-block__text {
-      display: block;
-      max-width: 580px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-
-      @include tablet {
-        display: inline;
-      }
-
-      @include desktop {
-        max-width: 600px;
-      }
+      padding-top: 70px;
+      padding-bottom: 80px;
     }
   }
 }
 
 .text-block__text {
   @include font(14px, 2.1, $normal);
+  display: block;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 
   @include tablet {
     @include font(18px, 1.7, $normal);
+    display: inline;
     margin-bottom: 0;
+  }
+
+  @include desktop {
+    display: block;
+    max-width: 600px;
+  }
+
+  &--form-intro {
+    @include tablet {
+      max-width: 800px;
+    }
   }
 }
 
@@ -54,5 +55,9 @@
 
   @include tablet {
     visibility: visible;
+
+    &--inline {
+      display: inline;
+    }
   }
 }

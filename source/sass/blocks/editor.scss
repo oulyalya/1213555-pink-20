@@ -1,3 +1,15 @@
+.editor {
+  margin-top: 23px;
+
+  @include tablet {
+    margin-top: 68px;
+  }
+
+  @include desktop {
+    margin-top: 62px;
+  }
+}
+
 .editor__container {
   @include tablet {
     @include flex(row);
@@ -26,7 +38,7 @@
   @include desktop {
     width: 940px;
     margin-top: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 
@@ -65,7 +77,7 @@
 
 .editor__controls-wrapper {
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
   text-align: center;
 
   @include tablet {
@@ -108,6 +120,10 @@
 
   &:hover .editor__icon {
     fill: rgba($c_theme-dark, 0.5);
+
+    @include desktop {
+      fill: $c_theme-main;
+    }
   }
 
   @include tablet {
@@ -307,8 +323,9 @@
 .editor__btns-wrapper {
   width: 100%;
   padding-top: 38px;
+  padding-bottom: 40px;
   text-align: center;
-  border-top: 1px solid grey;
+  border-top: 1px solid $c_border;
 
   @include tablet {
     width: 45%;
@@ -342,15 +359,18 @@
 }
 
 .editor__btn {
-  width: 100%;
+  width: auto;
   min-width: 280px;
   margin-bottom: 15px;
-  outline: 2px solid orange;
-
+  margin-left: $mobile-pads;
+  margin-right: $mobile-pads;
 
   @include tablet {
+    width: 100%;
     min-width: 200px;
     margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &:last-child {
