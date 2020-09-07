@@ -190,7 +190,7 @@
   height: 36px;
   background-color: $c_theme-main;
   border: 10px solid white;
-  z-index: 100;
+  z-index: -1;
 
   @include tablet {
     top: calc(50% + 17px);
@@ -200,11 +200,18 @@
 .contacts__map-img {
   position: relative;
   display: block;
+  width: 320px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  z-index: -1;
+  z-index: -2;
+
+  @include tablet {
+    width: 660px;
+  }
 
   @media (min-width: 960px) {
+    width: 1200px;
     transform: translateY(-50px);
   }
 }

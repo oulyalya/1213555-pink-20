@@ -5,6 +5,7 @@
 
   &:focus,
   &:hover {
+    @include transition-effect;
     outline: 0 none;
   }
 

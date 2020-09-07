@@ -1,16 +1,18 @@
 .form {
-  padding-top: 5px;
+  margin-top: -25px;
 
   @include tablet {
     @include flex(column);
+    margin-top: -12px;
     background-color: white;
   }
 
   @include desktop {
     @include flex(row);
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 130px;
     padding-left: 130px;
     text-align: center;
@@ -102,8 +104,8 @@
       @include flex(row);
       order: 6;
       width: auto;
-      margin-top: 10px;
-      margin-bottom: 40px;
+      margin-top: 7px;
+      margin-bottom: 35px;
       margin-left: $tablet-pads;
       margin-right: $tablet-pads;
       padding-left: 0;
@@ -437,7 +439,7 @@
   padding-left: 60px;
 
   @include tablet {
-    margin-top: 44px;
+    margin-top: 45px;
     margin-left: 60px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -512,7 +514,7 @@
 }
 
 .form__label--radio {
-  margin-top: 38px;
+  margin-top: 37px;
   padding-left: 70px;
 
   @include tablet {

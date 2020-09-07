@@ -4,7 +4,6 @@
 @import "../sass/basic/mixins.scss";
 @import "../sass/basic/global.scss";
 @import "../sass/basic/container.scss";
-/*@import "../sass/basic/wrapper.scss";*/
 @import "../sass/basic/visually-hidden.scss";
 @import "../sass/common/logo-link.scss";
 @import "../sass/common/title.scss";
@@ -31,32 +30,3 @@
 @import "../sass/blocks/panorama.scss";
 @import "../sass/blocks/editor.scss";
 @import "../sass/blocks/slider.scss";
-
-/**,
-*::before,
-*::after {
-  outline: 1px solid yellow;
-}*/
-/**,
-*::before,
-*::after {
-  outline: 1px solid orange;
-}*/
-/*
-@include font($size, $height, $weight);
-@include flex($flex-direction); align items?
-@include reset-list-style;
-@include reset;
-
-@include tablet {
-
-}
-
-@include desktop {
-
-}
-
-@include retina {
-
-}
-*/

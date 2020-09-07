@@ -146,3 +146,9 @@
     text-decoration: none;
   }
 }
+
+@mixin transition-effect {
+  transition-property: background-color, color, opacity, border-color, fill;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+}

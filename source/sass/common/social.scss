@@ -21,6 +21,7 @@
 
 .social__link {
   @include flex(row);
+  @include transition-effect;
   width: 53px;
   height: 53px;
   margin-left: 5px;
